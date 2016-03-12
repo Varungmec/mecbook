@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<table>
+<tr>
+<th>LInks</th>
+<th>Bookname</th>
+<th>Authorname</th>
+</tr>
+
+{%for a in list%}
+<tr>
+<td><a href="{{a}}" >{{a}}</a> <td>
+{{list2}}
+</td>
+<td>{{list3}}
+</td>
+</td>
+</tr>
+<br>
+{%endfor%}
+
+</table>
+<br>
+
+</head>
+</html>

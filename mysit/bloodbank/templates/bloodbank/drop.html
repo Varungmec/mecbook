@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLOOD BANK </title>
+</head>
+<body>
+
+<h1>ADD YOUR MISSING</h1>
+<p>Searched book is mising</p>
+
+Choose the category to which book is to be added 
+<form id="hello" method="post" action=".">
+
+<select name="categoryname" >
+{%for a in list%}
+<label for="{{ a.id_for_label }}">
+<option value={{a}}>{{a}}</option>	
+</label>
+{%endfor%}
+
+
+
+</select>
+
+<!-- {{list2}} -->
+<br>
+<br>
+<!-- {%for a in list2%}
+
+<input type="checkbox" name="choices" value={{a}}>{{a}}<br>
+{%endfor%} -->
+{{list2.as_p}}
+
+
+ <input type="submit" value="Click to add book">
+
+</form>
+
+ 
+
+
+
+<script>
+function hihi() {
+    document.getElementById("hello").submit();
+}
+</script>
+
+
+</body>
+</html>
+
+
